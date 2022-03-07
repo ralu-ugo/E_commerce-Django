@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block preview %}
+{% csrf_token %}
+
+<h1>Buy & Sell</h1>
+
+<div class = "row">
+    <ul class = "column">
+        <li>
+    <img class = "preview" src = "{% static 'images/creps1.jpeg'%}" alt = "Creps1"><button class = "add-cart">Add To Cart</button><h5><br>Nike Off-White Michigan Dunks: <h3>$1500</h3></h5>
+    <hr> 
+        </li>
+        <li>
+    <img class = "preview" src = "{% static 'images/creps2.jpeg'%}" alt = "Creps1"><button class = "add-cart">Add To Cart</button><h5>Nike Off-White Retro Jordan 4's: <h3>$1500</h3></h5>
+    <hr> 
+        </li>
+        <li>
+    <img class = "preview" src = "{% static 'images/creps3.jpeg'%}" alt = "Creps1"><button class = "add-cart">Add To Cart</button><h5>Nike Off-White Rocket Dunks: <h3>$1500</h3></h5>
+    <hr> 
+        </li>
+        <li>
+    <img class = "preview" src = "{% static 'images/creps4.jpeg'%}" alt = "Creps1"><button class = "add-cart">Add To Cart</button><h5>Nike Off-White Rubber Dunks, Uni Gold: <h3>$1500</h3></h5>
+    <hr>
+        </li>
+        <li>
+    <img class = "preview" src = "{% static 'images/creps5.jpeg'%}" alt = "Creps1"><button class = "add-cart">Add To Cart</button><h5>Jordan 4's, Uni Blue: <h3>$1500</h3></h5>
+    <hr>
+        </li>
+        <li>
+    <img class = "preview" src = "{% static 'images/creps6.jpeg'%}" alt = "Creps1"><button class = "add-cart">Add To Cart</button><h5>Nike Syracuse Dunks: <h3>$1500</h3></h5>
+    <hr>
+        </li>
+    </ul>
+
+</div>
+
+{% endblock %}

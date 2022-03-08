@@ -6,6 +6,6 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path("home/", views.preview1),
+    path("preview/", views.preview1),
     path("", views.title)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
